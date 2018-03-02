@@ -1,5 +1,5 @@
 // initial array with topics
-var topics = ["dancing", "drinking", "laughing", "slapping", "swimming", "eating", "fighting"];
+var topics = ["hacking", "drinking", "fail", "slapping", "memes", "thug life", "fighting"];
 
 // function that renders buttons when called
 function renderButtons(){
@@ -22,7 +22,7 @@ var queryURL = "https://api.giphy.com/v1/gifs/search";
   // adds the parameters to the query URL
   queryURL += '?' + $.param({
       'q': topic,
-      'api_key': "dc6zaTOxFJmzC",
+      'api_key': "oJ9CdbrYbISju4gFDVquiYuqrliYUR3U",
       'limit' : 10,
   });
   $.get(queryURL, function(response) {
@@ -85,3 +85,4 @@ $('#addbtn').click(function(){
 
 // to display the buttons when page is loaded
 renderButtons();
+// note in order for the giphys to actually play you have to click on them.
